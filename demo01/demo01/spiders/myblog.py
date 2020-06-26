@@ -14,7 +14,7 @@ class MyblogSpider(scrapy.Spider):
         print(response)
         # <class 'scrapy.selector.unified.SelectorList'>
         contentList = response.xpath('//div[@class="post-meta wrapper-lg"]')
-        items = []
+
         for content in contentList:
             # 获取标题
             h2 = content.xpath(".//h2/a/text()").get()
@@ -29,10 +29,12 @@ class MyblogSpider(scrapy.Spider):
             # yield article
 
             item = Demo01Item(title=h2,content=summary)
-            items.append(item)
-
+            yield item
             pass
-
+        next_url = response.xpath("//ol/li[@class='next']/a/@href").get()
+        if not next_url:
+            return
+        else:
+            yield scrapy.Request(next_url,callback=self.parse)
         print('-' * 40)
-        return items
         pass

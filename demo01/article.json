@@ -5,3 +5,320 @@
 {"title": "Python集中式虚拟环境管理", "content": "Python集中式虚拟环境管理virtualenvwrapper使用文档通过virtualenvwrapper创建的虚拟环境都会统一存放到指定位置统一管理方便在多个虚拟环境间切换更加方便的去使用..."}
 {"title": "PowerShell中使用workon命令无法激活虚拟环境问题", "content": "PowerShell中使用workon命令无法激活虚拟环境问题原因powershell中workon不能激活虚拟环境，是因为workon命令会启动一个子进程，该进程不修改当前环境，所以在powe..."}
 {"title": "使用PyCharm创建py文件头部自动添加常用注解", "content": "在下图位置填写#!/usr/bin/env python3\n# -*- coding:utf-8 -*-\n# @Time: ${DATE} ${TIME}\n# @Author: gaoxing\n..."}
+{"title": "Python学习资料", "content": "B站PYTHON课件与开发环境.zipPython基础代码.zipPython基础42-虚拟环境(创建/激活/操作/删除-virtualenv、Pycharm、virtualenvwrapper..."}
+{"title": "SQL 将查询结果插入到另一张表中", "content": "INSERT INTO（1） 如果两张表（导出表和目标表）的字段一致，并且希望插入全部数据，可以用这种方法：INSERT INTO 目标表 SELECT * FROM 来源表 WHERE 条件;..."}
+{"title": "解决Powershell中不能运行脚本问题", "content": "问题powershell中不能执行脚本，提示‘because running scripts is disabled on this system’原因powershell中默认的executi..."}
+{"title": "我终于知道为什么后端返回的数据统统塞到map会被喷了", "content": "后端返回给前端数据一般会返回封装好的pojo对象，vo对象或万恶的map对象前两个对象没什么可以说的不扯犊子直接吐槽map数据类型的策马奔腾、放荡不羁对于前端来说，做了两个网页，显示的都是个人信..."}
+{"title": "VsCode更换漂亮的文件和文件夹Icon？Material Icon Theme？", "content": "在扩展搜索 Material Icon Theme 安装第一个，就酱子，就这么简单"}
+{"title": "vscode如何将less编译到指定css目录中", "content": "vscode如何将less编译到指定css目录中安装在vscode扩展搜索Easy Less，然后安装，安装成功后记得重启vscode打开配置按下Ctrl + Shift + p快捷键，输入Op..."}
+{"title": "js之获取json属性的个数", "content": "var json = {'name':'abc', 'age': 16}\nlength = Object.keys(json).length"}
+{"title": "通过npm安装live-server轻松实现本地服务器", "content": "一、安装npm i -g live-server\n二、使用安装完成后，切换到想要打开网页的目录，cmd输入运行 live-server --port=8080\n参考：https://www.ji..."}
+{"title": "Js之二维数组横纵x轴y轴置换", "content": "Js之二维数组横纵x轴y轴置换话不多说上代码// 原始数组\nlet data = [\n  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ..."}
+{"title": "Webstrom和Idea终端git log中文显示问题", "content": "在终端执行下面的命令，完美解决set LESSCHARSET=utf-8"}
+{"title": "Elasticsearch学习笔记", "content": "Elasticsearch学习笔记简介我们的应用经常需要添加检索功能，开源的ElasticSearch是目前全文搜索引擎的首选。他可以快速的存储、搜索和分析海量数据。Spring Boot通过整..."}
+{"title": "jsonpath示例python代码", "content": "demo01代码d={\n        \"error_code\": 0,\n        \"stu_info\": [\n                {\n..."}
+{"title": "jsonpath教程", "content": "https://blog.csdn.net/fanjint/article/details/102888558https://www.cnblogs.com/denise1108/p/10265..."}
+{"title": "正则表达式笔记", "content": "<br/><p align=\"center\"></p><br/>什么是正则表达式 ？正则表达式是一种被用于从文本中检索符合某些..."}
+{"title": "SpringSecurity之密码加密问题", "content": "SpringSecurity之密码加密问题密码加密一般分为对称加密和非对称加密像https或其他通信协议就是对称加密加机密后还需要解密密码呢一般不要解密所以从安全性考虑，非对称加密更适合密码之前..."}
+{"title": "Docker运行Mongo", "content": "docker run -d -p 27017:27017 --name mongo --restart=always -e MONGO_INITDB_ROOT_USERNAME=root -e ..."}
+{"title": "linux运行jar项目", "content": "linux运行jar项目nohupnohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup 命令运行后台中的程序。..."}
+{"title": "Docker中Redis设置密码", "content": "dockerdocker run -d --name redis_6379 -p 6379:6379 --restart=always f0453552d7f2 redis-server --a..."}
+{"title": "移动端设备尺寸单位", "content": ""}
+{"title": "浏览器控制台发送请求", "content": "var xhr = new XMLHttpRequest();\nxhr.open(\"POST\",\"/logout\",true);\nxhr.send();"}
+{"title": "乐观锁与悲观锁", "content": "多读用乐观锁多写用悲观锁"}
+{"title": "时区连接汇总", "content": "jdbc:mysql://127.0.0.1:3306/mp?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=..."}
+{"title": "gson用法", "content": "添加依赖<dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId..."}
+{"title": "RMQ", "content": "一、安装docker方式安装RMQRMQ官网安装文档\nhttps://www.rabbitmq.com/download.html\n在docker终端安装并启动\ndocker run -it -..."}
+{"title": "BeanUtils.copyProperties();", "content": "BeanUtils.copyProperties() 注意事项一、不同的包用法不一样package org.springframework.beans;中的\nBeanUtils.copyProp..."}
+{"title": "浏览器打不开github解决办法", "content": "更新dns缓存即可windows+r输入cmd运行下面的命令ipconfig /flushdns"}
+{"title": "docker mysql无法远程连接问题", "content": "docker run --name mysql01 -e MYSQL_ROOT_PASSWORD=123456 -d mysql    \ndocker exec -it mysql01 bash..."}
+{"title": "解决docker启动tomcat容器访问端口显示404的问题，页面显示 源服务器未能找到目标资源的表示或者是不愿公开一个已经存在", "content": "如果已经关闭防火墙，还出现404问题，那么就确定是tomcat的webapps文件夹下没有东西启动tomcatdocker run -d -p 8088:8080 tomcat\n查看已启动的容器..."}
+{"title": "Docker下载镜像太慢问题", "content": "https://www.cnblogs.com/spll/p/11828193.html"}
+{"title": "docker无法启动解决", "content": "更新yum源仓库yum -y update重启虚拟机启动dockersystemctl start docker"}
+{"title": "springboot笔记", "content": "1.更改banner在resources目录创建以banner开头的文件，txt或jpg都可以2.注入beanMyConfig.class@Configuration\npublic class ..."}
+{"title": "springboot集成支付宝支付", "content": "https://blog.csdn.net/qq_36964058/article/details/89465401"}
+{"title": "AMQ", "content": "AMQ点对点模式无论接收方启动与否，总能接收到消息发布订阅模式接收方必须启动才能接收到消息"}
+{"title": "菜鸟解决报错的思路是经验，而不是逻辑，废话", "content": "像我这种菜鸟，最害怕报错，一遇到遇到报错就虎躯一震，眉头一紧，紧接着就是熟练的复制，打开百度，一条一条博客翻答案，有时候运气好能解决，有时候翻到怀疑人生；没有办法，向我这种菜鸟，断点又不会打，源..."}
+{"title": "excel技巧", "content": "https://jingyan.baidu.com/article/9f7e7ec0622c112f2915541e.html"}
+{"title": "Echarts学习笔记", "content": "可视化面板介绍​    应对现在数据可视化的趋势，越来越多企业需要在很多场景(营销数据，生产数据，用户数据)下使用，可视化图表来展示体现数据，让数据更加直观，数据特点更加突出。01-使用技术完成..."}
+{"title": "mybatis3逆向工程代码生成不全的问题", "content": "逆向的几个坑 总结Mybatis Generator 无法生成selectByPrimaryKey、deleteByPrimaryKey、updateByPrimaryKey MySQL三大坑及..."}
+{"title": "生成的dao层代码使用", "content": "1.插入insertSelective和insert方法的区别insert: 不判断对象中的属性是否为null，一律执行插入；insertSelective：判断对象中的属性是否为null，如果..."}
+{"title": "javaweb乱码的解决", "content": "<!-- 解决post乱码 -->\n<filter>\n    <filter-name>CharacterEncodingFilter</filter-..."}
+{"title": "java分布式项目创建", "content": "1.工程依赖分析2.创建过程先创建父工程如mystore_parent，普通jar工程即可；   创建好后，删除src目录，在pom文件定义所有依赖的版本号，这里并不是真正引入创建子工程comm..."}
+{"title": "切入点表达式", "content": "切入点表达式@AfterReturning(value = \"execution(* com.gaoxing.demo1.GoodsDaoImpl.update(..))\",..."}
+{"title": "头像", "content": ""}
+{"title": "原生js利用时间戳计算出具体的年龄", "content": "代码function getAge(birthday)\n{\n    //出生时间 毫秒\n    var birthDayTime = new Date(birthday).getTime(); ..."}
+{"title": "Redis的持久化", "content": "概述Redis的高性能是由于其将所有数据都存储在了内存中为了使Redis在重启之后仍能保证数据不丢失，需要将数据从内存中同步到硬盘中，这一过程就是持久化Redis支持两种方式的持久化,可以单独使..."}
+{"title": "Redis通用命令", "content": "keys pattern获取所有与pattern匹配的key，返回所有与该key匹配的keys。*表示任意一个或多个字符，?表示任意一个字符keys *del key1 key2…删除指定的ke..."}
+{"title": "Redis基本操作", "content": "字符串类型String概述设定key持有指定的字符串value，如果该key存在则进行覆盖操作。总是返回”OK”操作set key value(保存)get key(根据key获取value)d..."}
+{"title": "@Component, @Repository, @Service的区别", "content": "https://blog.csdn.net/fansili/article/details/78740877"}
+{"title": "settings.xml", "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!--\nLicensed to the Apache ..."}
+{"title": "mysql允许远程访问", "content": "https://www.cnblogs.com/shenwenkai/p/10740266.html"}
+{"title": "批量下载b站视频", "content": "一、FFmpeg环境安装及使用命令实现音视频转码Windows下安装FFmpeg环境Windows下安装FFmpeg，只需要下载对应32bit或64bit的版本:https://ffmpeg.z..."}
+{"title": "JavaStudy", "content": "https://how2j.cn/"}
+{"title": "利用translate()进行水平垂直居中", "content": "translate()函数是css3的新特性.在不知道自身宽高的情况下，可以利用它来进行水平垂直居中.代码如下://html:\n<div class='wrap'>\n    我不知道..."}
+{"title": "医院门诊信息管理系统Api文档", "content": "医院门诊信息管理系统Api文档1.用户端1.1注册请求类型：post接口名称：/api/patient/reg请求参数：病人(Patient)对象 \n{\n    全部字段\n}\n响应数据：结果(R..."}
+{"title": "社会主义核心价值观js代码", "content": "<script src=\"https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js\"></script>\n..."}
+{"title": "sun", "content": "sun.zip"}
+{"title": "navicat11.1（汉化）", "content": "navicat11.1（汉化）.rar"}
+{"title": "图床", "content": "https://www.jianshu.com/p/a518ca89ec15"}
+{"title": "Meven3.5.4", "content": "apache-maven-3.5.4-bin.zip"}
+{"title": "王雨", "content": "sunflowers.zip"}
+{"title": "审题表", "content": "选题申报审核表2.doc"}
+{"title": "js毫秒数和日期相互转换", "content": "https://blog.csdn.net/cherlshall/article/details/80985209https://blog.csdn.net/jjy8040/article/de..."}
+{"title": "SSM增加时间到数据库", "content": "https://blog.csdn.net/qq_39645768/article/details/80934901"}
+{"title": "db.json", "content": "jsonserver.zip"}
+{"title": "win页面跳转", "content": "1、直接的事件跳转window.location.href=\"你所要跳转的页面\";2、新窗口跳转window.open('你所要跳转的页面');3、返回上一页window.history.bac..."}
+{"title": "vue项目 拷到别的电脑应该怎吗再次重新运行", "content": "步骤：　　将项目中的node_modules文件夹删掉，其次在文件根目录下执行 $ npm cache clean 命令清除掉cache缓存（如果你前面是用的cnpm install 命令的话就..."}
+{"title": "实现ElementUI Dialog宽度响应式变化", "content": "在ElementUI的Dialog中，需要实现其宽度随浏览器宽度变化而变化，并设定默认值，当浏览器宽度大于该值时，Dialog保持该宽度，小于该值时，使用100%宽度。代码使用 window.o..."}
+{"title": "看了一大推vue引入外部js教程，没一个成功的", "content": "草他妈的"}
+{"title": "vue2.XX 提示[Vue warn]: Error in render: \"TypeError: Cannot read property 'img' of undefined\"", "content": "出现的原因： 可能是页面渲染和请求数据是异步操作， 数据还未请求结束，页面已经开始渲染了，所以刚开始报未定义变量， 等数据获取结束后，再次渲染，页面内容出来了，但是刚开始的警告也出来了解决办法：..."}
+{"title": "前端的坑", "content": "1.往sessionStorage存数据，网页刷新后才有效果2.而且只能存字符串，存接json数据需要转换下sessionStorage和localStoragewindow.sessionSt..."}
+{"title": "句子迷接口需求分析", "content": "进入首页分页查询第一页15条数据（句子），返回json数组，无参数在首页点击加载更多分页查询下一页15条数据（句子），返回json数组，无参数点击分类根据分类id查询此id下的专辑，分页查询第一..."}
+{"title": "vue路由跳转不刷新解决办法", "content": "路由参数变化但是页面没有刷新这是Vue的组件复用的默认处理方式文档里面写了不想复用的话，就在父组件的router-view上加个key<router-view :key=\"$ro..."}
+{"title": "vue如何给v-for循环的标签添加背景图片", "content": "v-bind:style=\"{ 'background-image': 'url(' + item.PlaceImgUrl + ')','background-repeat':'no-..."}
+{"title": "MDUI标准响应式布局写法", "content": "https://www.jianshu.com/p/0fda21cde97c"}
+{"title": "[Violation] Added non-passive event listener to a scroll-blocking 'mousewheel' event.", "content": "[Violation] Added non-passive event listener to a scroll-blocking 'mousewheel' event. Consider ma..."}
+{"title": "句子迷sql", "content": "juzimi.sql"}
+{"title": "Vue+MDUI+Muse-UI的使用与安装", "content": "https://blog.csdn.net/csj41352/article/details/80542247https://blog.csdn.net/phj_88/article/detai..."}
+{"title": "@Autowired 与@Resource的区别", "content": "https://blog.csdn.net/weixin_40423597/article/details/80643990https://www.yuque.com/docs/share/fe..."}
+{"title": "Integer的缓存机制", "content": "https://blog.csdn.net/yrwan95/article/details/82785129"}
+{"title": "快速记", "content": "kuaisuji.zip"}
+{"title": "SpringMVC执行流程", "content": ""}
+{"title": "【Junit】JUnit-4.12使用报java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing错误", "content": "https://www.cnblogs.com/anny0404/p/5275595.html"}
+{"title": "Hibernate 5.x 配置 C3P0 连接池", "content": "https://www.cnblogs.com/uzipi/p/8116237.html"}
+{"title": " JRebel for IntelliJ 热部署破解方法", "content": "原文地址：https://blog.csdn.net/is_chenzh/article/details/82148157打开idea快捷键 ctrl+alt+s 打开设置1、打开plugins..."}
+{"title": "新建一个servlet总是生成web.xml不能生成注解问题", "content": "https://blog.csdn.net/shuye_gen/article/details/77770958"}
+{"title": "狡猾的谎言", "content": "https://36kr.com/p/5250492"}
+{"title": "PreparedStatement转String类型sql语句", "content": "String asSql = ((JDBC4PreparedStatement)stt).asSql();"}
+{"title": "HttpServletResponse防止乱码", "content": "response.setContentType(\"text/html\");//内容类型，解析为javascript代码或html代码response.setCharacterEncoding(\"..."}
+{"title": "Bootstrap4教程", "content": "https://scrimba.com/g/gbootstrap4"}
+{"title": "java+mysql实现最基本的用户登录注册功能", "content": "https://blog.csdn.net/qq_37400312/article/details/81365335"}
+{"title": "女朋友问我什么是DAO设计模式", "content": "DAO设计模式DAO设计课程还没有看，今天把老师用的所为的DAO设计模式写的学生信息管理系统看了一番，感觉就是，把功能分的很细，操作数据，判断数据结果，传入数据，设计接口约束，这些写好后，最后调..."}
+{"title": "Java中Class.forName()函数用法 原理 详解", "content": "https://blog.csdn.net/ChenYuZong/article/details/81165238"}
+{"title": "Java操作数据库实现\"增删改查\"", "content": "https://www.cnblogs.com/zkdayup/p/7759946.html"}
+{"title": "Java连接MySQL数据库——含步骤和代码", "content": "https://www.cnblogs.com/centor/p/6142775.html"}
+{"title": "JDBC中日期时间的处理", "content": "https://www.cnblogs.com/vicosong/articles/9321362.html"}
+{"title": "补点鸡汤正能量", "content": "坐一天，是为了敲走对生活的绝望"}
+{"title": "记账软件", "content": "链接"}
+{"title": "Java中Date与String的相互转换", "content": "https://www.cnblogs.com/huangminwen/p/5994846.html"}
+{"title": "java 中枚举类型,整型,字符串之间转换", "content": "https://www.cnblogs.com/myJavaCareerLife-yewei/p/8109661.html"}
+{"title": "面向接口编程", "content": "package 面向对象.包装类;\n\n// 面向接口\n\n// 定义主板\n// 定义鼠标\n// 定义键盘\n\n// 定义接口\ninterface IUsb {\n    void swapData()..."}
+{"title": "获取变量的数据类型", "content": "https://blog.csdn.net/qq_36728361/article/details/89217682"}
+{"title": "java迭代器", "content": "https://www.cnblogs.com/zyuze/p/7726582.html"}
+{"title": "学生信息管理系统ArrListDemo.java", "content": "package com.gaoxing.lesson02;\n\nimport java.awt.Window.Type;\nimport java.util.ArrayList;\nimport ja..."}
+{"title": "java 集合增删改查", "content": "https://blog.csdn.net/zhangqunshuai/article/details/80660974"}
+{"title": "Java作业", "content": "实现一个学生管理系统，要求把学生信息保存到，集合中，功能:1.添加学生2.根据学好添加学生3.根据学号删除学生4.显示所有学生信息java 集合增删改查"}
+{"title": "java中Map集合的常用方法", "content": "https://www.cnblogs.com/xiaostudy/p/9510763.html"}
+{"title": "[Java] ArrayList 类", "content": "https://blog.csdn.net/ftell/article/details/80826235"}
+{"title": "Java中三种Set类型用法、性能大比拼", "content": "https://blog.csdn.net/bestxiaok/article/details/78413022"}
+{"title": "vue中<template>中v-for的使用以及<template>多层嵌套问题", "content": "https://www.cnblogs.com/jennydtt/p/10277493.html"}
+{"title": "wallpaper 壁纸分享", "content": "搜wlop都是我喜欢的类型"}
+{"title": "前端IDE中Emmet插件快捷输入HTML代码", "content": "https://www.cnblogs.com/jyughynj/p/VSCodeEmmet.html"}
+{"title": "bootstrap轮播如何支持移动端滑动手势", "content": "https://www.cnblogs.com/duanzhenzhen/p/11124980.html"}
+{"title": "git提交忽略文件或文件夹", "content": "https://www.cnblogs.com/e206842/p/7121927.html"}
+{"title": "A:hover触发B元素的动画", "content": "https://segmentfault.com/q/1010000002963898"}
+{"title": "Flex Basis与Width的区别", "content": "https://www.jianshu.com/p/17b1b445ecd4"}
+{"title": "Hexo server报错Cannot read property 'offset' of null解决方法", "content": "这破错误折磨了我一天https://blog.csdn.net/buppt/article/details/78016407"}
+{"title": "vscode配置git", "content": "https://www.jb51.net/article/151649.htm"}
+{"title": "Git基本原理", "content": "5  Git基本原理5.1 Hash哈希哈希是一个系列的加密算法，各个不同的哈希算法虽然加密强度不同，但是有以下介个共同点：1.不管输入的数据量有多大，输入同一个哈希算法，得到的加密长度结果长度..."}
+{"title": "Git基本操作", "content": "4  Git命令操作4.1 本地库初始化命令：  git init效果：注意：不要随意删除和修改4.2设置签名形式：用户名：tomEmail地址:  1511844263@qq.com作用：区分..."}
+{"title": "linux系统中如何进入退出vim编辑器，方法及区别", "content": "https://www.cnblogs.com/crazylqy/p/5649860.html"}
+{"title": "querySelectorAll与querySelector的区别", "content": "https://blog.csdn.net/dalei9243/article/details/81075408"}
+{"title": "jQuery插件", "content": "jQury插件1.jQuery插件的网站http://plugins.jquery.com/  官网http://www.jq22.com/  jQuery插件库http://www.htmle..."}
+{"title": "jQuery之自定义插件", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery工具", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之轮播图", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之消息滚动案例", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery动画控制-stop/finish/delay", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery放大镜实例", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery按键移动元素", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery拖拽加继承", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之元素拖拽案例", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery事件对象", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "js字符与ASCII码互转的方法", "content": "https://blog.csdn.net/xiaobing_hope/article/details/78645273"}
+{"title": "jQuery之选项卡", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之jqDom的增删改", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之手风琴菜单，end()，链式操作和串联操作", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之菜单展开、收缩实例is()、.visible()的应用", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery中filter()和find()和has()的用法区别", "content": "https://blog.csdn.net/haoaiqian/article/details/61616166"}
+{"title": "jQuery之获取、失去焦点事件", "content": "jquery触发/失去焦点事件触发焦点：$(\"Element\").focus()触发每一个匹配元素获得焦点事件。$(\"Element\").focus(function)事件会在获得焦点的时候触发..."}
+{"title": "jQuery混淆选择器", "content": "http://jquery.cuishifeng.cn/jQuery.escapeSelector.html"}
+{"title": "jQuery事件列表focusin()、focusout、slideDown()、slideUp()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之控制事件触发", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之事件委派", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之事件的绑定和解绑", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "$(document).ready和window.onload的区别", "content": "https://www.cnblogs.com/fengchaoran/p/7493803.htmlhttps://www.cnblogs.com/jiajia123/p/6107748.html"}
+{"title": "jQuery标签查找总结", "content": "https://www.cnblogs.com/tangjianyu/articles/7863238.html"}
+{"title": "jQuery之DOM的筛选遍历each()、map()、has()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之DOM的筛选遍历filter()、not()、slice()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之DOM的筛选遍历prev()、prevAlL()、next()、nextAll()、siblings()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之DOM的筛选遍历first()、last()、odd()、even()、eq()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之css属性滚动条scrollTop()、scrollLeft()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之css属性offset()、position()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之css属性width()、innerWidth()、outerWidth()、outerWidth(true)", "content": "width()和innerWidth()<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <m..."}
+{"title": "jQuery之css属性css()", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之hasClass()、toggleClass()开关样式实例", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之添加、移除class属性", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UT..."}
+{"title": "jQuery之移除属性、复选框实例", "content": "<h3>你是什么垃圾？</h3>\n<ul class=\"sm\">\n    <li class=\"title\"&g..."}
+{"title": "jQuery之attr()、prop()获取、设置属性", "content": "<div id=\"idtest\" class=\"classtext\" custom=\"teacher\">\n    hh\n&..."}
+{"title": "jQuery之文本属性", "content": "01设置文本text()<div id=\"demo1\">\n    Hello\n</div>\n<button id=\"btn1&quot..."}
+{"title": "jQuery架构详解", "content": "<script>\n    // jQuery采用闭包的方式解决命名空间\n    // 模拟jQuery的调用方式\n\n    (function (){\n\n        window..."}
+{"title": "JS之去掉首尾空格", "content": "//去左空格;\nfunction ltrim(s){\n    return s.replace(/^\\s*/g,\"\");\n}\n//去右空格;\nfunction rtrim(s..."}
+{"title": "JS之找对象", "content": "模板函数<script>\n    // 模板函数\n    function userCreate(name,age){\n        var userObj = {};\n     ..."}
+{"title": "jQuery之引用及DOM选择详解", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": " js获取left值的方法", "content": "https://blog.csdn.net/chenzs12345/article/details/78494996"}
+{"title": "JS之实现选项卡和悬浮导航", "content": "// 首先用语言描述下来整体效果，在描述出来，最后码出来\n// 获取ul下的每一个ul，并且给他们添加点击事件，事件判断给他们class\n\nvar tabs = document.getElem..."}
+{"title": "JS之event.target", "content": "li1\n            li2\n            li3\n            li4\n            li5\n            ..."}
+{"title": "JS事件对象event", "content": "获取位置事件接受个even形参并打印\nscreenX,Y  // 相对于屏幕的位置\nlayerX,Y   // 相对于元素的位置\n取消默认事件event.preventDefault()var ..."}
+{"title": "JS之添加事件", "content": "标签绑定事件<div id=\"d1\" onclick=\"add()\">\n\n</div>\njs添加事件、移除事件（只能添加、移除一个..."}
+{"title": "JS修改元素属性", "content": "<script>\n    var tu = document.getElementById(\"img1\");   // 通过ID获取元素\n    console...."}
+{"title": "JS之BOM", "content": "查看window.location所有属性window.location\nwindow.location常用属性window.open(\"https://www.qiangssvip...."}
+{"title": "JS三种对话框", "content": "alert(); // 仅弹出提示\nconfirm(); // 返回Boolean\nprompt(String,value); // 返回用户输入的值"}
+{"title": "Js 闭包", "content": "标准代码<script>\n        \n        /*\n            闭包：伪全局变量，只有闭包函数才能访问的伪全局变量\n            具有全局变量的特..."}
+{"title": "Js 数据类型转换", "content": "在js中我们经常需要知道某些变量的数据类型，并将其转换为我们所需要的数据类型。通常，我们判断变量的数据类型会用到标识符typeof,如：var mood = \"happy\";..."}
+{"title": "Js 三元操作符", "content": "优先级一元 > 二元 > 三元prompt输入框http://www.w3school.com.cn/jsref/met_win_prompt.asp"}
+{"title": "CSS实现水平居中和垂直居中的几种方式", "content": "https://baijiahao.baidu.com/s?id=1622460301039180175&wfr=spider&for=pc"}
+{"title": "CSS给a标签设置高度", "content": "因为a不是块元素所以不能直接设置高度，只需要把a变成块元素即可https://jingyan.baidu.com/article/d621e8da7692ad2865913f32.html"}
+{"title": "CSS解决图片过大撑破DIV网页方法", "content": "http://www.divcss5.com/wenji/w364.shtml"}
+{"title": "CSS去浮动和margin", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "CSS cursor:hand与cursor:pointer的区别介绍", "content": "https://www.cnblogs.com/vanone/p/5244527.html表单样式https://www.w3cl.com/css/css_form.htm"}
+{"title": "CSS文本格式化", "content": "<style>\n    body{\n        /*网页按照顺序找字体，如果都找不到则使用系统字体*/\n        font-family: \"黑体\",&..."}
+{"title": "CSS背景实例", "content": "传统<style>\n           body{\n               /*背景图片资源*/\n               background-image: url('..."}
+{"title": "CSS选择器", "content": "组合选择器/*\n组合选择器“逗号”隔开，设置他们共同的属性\ndiv,p\n子选择器“空格”隔开，设置子选择器的属性\ndiv p\n*/\n关系选择器子代选择器div>p  // div下的第一个..."}
+{"title": "CSS的三种引入方式", "content": "我只是把名字忘记了而已行内式内部样式表外部样式表优先级行内式 > 内部样式表 > 外部样式表复习一些重要的标签，各种选择器的用法，盒子模型。。。"}
+{"title": "Es2015 Reflect.apply()拦截函数", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 proxy之set、deleteProperty、has", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta chars..."}
+{"title": "Es2015 proxy之get", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta chars..."}
+{"title": "Es2015 捕获、反向引用捕获、标签函数", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 Number、Math", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 Map", "content": "map.index<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset..."}
+{"title": "Es2015 set", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 async、await", "content": "text.jsconst fs = require('fs');\n\nconst readFile = function (fileName){\n    return new Promise((r..."}
+{"title": "Es2015 generation配合axios请求数据", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "Es2015 Sybol、generator", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "Es2015 clss类和继承", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "Es2015 传统方法创建类", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "Es2015 动态加载js模块", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "js之属性操作重点", "content": "<script>\n        var person = {\n            name:\"Tom\",\n            age:18,\n     ..."}
+{"title": "js之带引号的属性", "content": "<script>\n      var person = {\n        name:\"Tom\",\n        age:18,\n        \"s..."}
+{"title": "Es2015 模块化(一)", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta char..."}
+{"title": "Es2015 Promise的用法", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015  json的简写、Object的is()、assign()、keys(), values(), entries()的方法、三个点解构对象", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 Array.from()、find()、findIndex()、fill()", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 Array.from()的用法", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "Es2015 数组热闹的循环", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "javascript中函数和方法有什么不同", "content": "以前一直疑惑javascript中函数和方法的不同或者说区别，今天在javascript权威指南中发现了明确的解释：函数（function）: 函数是带有名称（named）和参数的JavaScr..."}
+{"title": "Es2015this、apply、call、bind", "content": "https://juejin.im/post/59bfe84351882531b730bac2"}
+{"title": "es2015箭头函数", "content": "this问题普通函数中的this永远指向最后调用他的那个对象；箭头函数：this问题, 定义函数所在的对象，不在是运行时所在的对象箭头函数里面没有arguments, 用  ‘...’箭头函数不..."}
+{"title": "es2015三个点的使用", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "es2015字符串的查找和拼接", "content": "index.html<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charse..."}
+{"title": "es2015字符串拼接", "content": "Demo1<script>\n    window.onload = function (){\n        // 字符串模板--拼接操作\n        let name = 'T..."}
+{"title": "es2015之解构赋值", "content": "代码<script>\nwindow.onload = function (){\n  // 解构数组\n  let [a,b,c] = [1,2,3];\n  console.log(&q..."}
+{"title": "es2015之let、const", "content": "let注意没有育预解析，不存在变量提升在代码块内，只要let定义变量，在之前使用都是报错；使用未定义的变量为TDZ死区开始，定义变量为TDZ死区结束；   先定义完再使用；同一个作用域里，不能重..."}
+{"title": "Vue2.x Cli3.x babel-preset-stage-2的安装和使用", "content": "安装babel-preset-stage-2到项目中，找到当前项目cnpm install babel-preset-stage-2 --save-dev\nbabel配置文件babel.conf..."}
+{"title": "Vue2.x Cli3.x vuex的安装和使用", "content": "安装vuex到项目中，找到当前项目npm install vuex --save\n创建store.js在src目录创建store文件夹，在此文件夹下创建store.js文件import Vue ..."}
+{"title": "Vue2.x Cli3.x axios的安装和使用", "content": "安装axios到项目中，找到当前项目npm install axios --save //or npm install axios --save-dev\n安装完毕后，在main.js中导入并配置..."}
+{"title": "Vue2.x Cli3.x vue-resource的安装和使用", "content": "安装vue-resource到项目中，找到当前项目npm install vue-resource --save\n安装完毕后，在main.js中导入，如下所示：import VueResourc..."}
+{"title": "Vue2.x Cli3.x 路由的一些细节", "content": "Home.vue <tbody>\n        <tr v-for=\"customer in customers\" :key=\"customer..."}
+{"title": "一鼓作气、再而衰、三而竭", "content": "学习不能停下，停下来就会被其他垃圾所诱惑，多看几遍李笑来的文章，晚安"}
+{"title": "搭建本地json服务器", "content": "Github地址https://github.com/typicode/json-server安装步骤全局安装npm install -g json-server // or npm insta..."}
+{"title": "Vue2.x Cli3.x 局部指令和过滤器", "content": "ShowBlogs<!-- 1.模板 -->\n<template>\n  <!-- 只能有一个根标签 -->\n  <div id=\"showbl..."}
+{"title": "Vue2.x Cli3.x 简单搜索", "content": "HelloWorld.vue<template>\n  <div class=\"hello\">\n    <h1>博客总览</h1&gt..."}
+{"title": "Vue2.x Cli3.x 自定义过滤器", "content": "main.js//自定义过滤器\nVue.filter(\"to-uppercase\",function(value){\n  return value.toUpperCase()..."}
+{"title": "Vue2.x Cli3.x 自定义指令", "content": "About.vue<template>\n  <div class=\"about\">\n    <h1 v-rainbow>This is a..."}
+{"title": "Vue2.x Cli3.x Get请求数据", "content": "created(){\n    this.$http.get('http://jsonplaceholder.typicode.com/posts')\n    .then(function(dat..."}
+{"title": "Vue2.x Cli3.x VueResource(post)", "content": "安装VueResourcenpm install vue-resource --save\n使用https://www.cnblogs.com/axl234/p/5899137.html"}
+{"title": "Vue2.x Cli3.x控制滚动行为", "content": "官方https://router.vuejs.org/zh/guide/advanced/scroll-behavior.html#%E5%BC%82%E6%AD%A5%E6%BB%9A%E5%..."}
+{"title": "Vue2.x Cli3.x复用router-view", "content": "router.jsexport const router = new Router({\n  mode: 'history',\n  base: process.env.BASE_URL,\n\n  r..."}
+{"title": "Vue2.x Cli3.x router文件抽离", "content": "router.jsexport const router = new Router({\n  mode: 'history',\n  base: process.env.BASE_URL,\n\n  r..."}
+{"title": "Vue2.x Cli3.x 导航守卫（组件守卫）", "content": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%..."}
+{"title": "Vue2.x Cli3.x 导航守卫（路由独享守卫）", "content": "//路由独享守卫\n{\n    path: '/admin',\n    name: 'admin',\n    component: () => import('./components/Ad..."}
+{"title": "Vue2.x Cli3.x 导航守卫（全局守卫）", "content": "//全局守卫\nrouter.beforeEach((to,from,next) =>{\n  // alert(\"还没有登陆，请登录\");\n  // next();\n  ..."}
+{"title": "Vue2.x Cli3.x 二级路由及三级路由", "content": "router.jsimport Vue from 'vue'\nimport Router from 'vue-router'\n//一级路由\nimport Home from './views/H..."}
+{"title": "Vue2.x Cli3.x name属性及跳转方法", "content": "Menu.vue<template>\n  <div class=\"menu\">\n    <h1>This is an menu page&..."}
+{"title": "Vue2.x Cli3.x优化router-link标签（name属性）", "content": "router.js    {\n      path: '/menu',\n      name: 'menu',\n      component: () => import('./compo..."}
+{"title": "Vue2.x Cli3.x优化router-link标签（tag、redirect）", "content": "更改router-link默认编译的a标签为制定标签<router-link tag=\"div\" to=\"/\">主页</router-l..."}
+{"title": "vetur插件提示 [vue-language-server] Elements in iteration expect to have 'v-bind:key' directives错误的解决办法", "content": "忽略错误解决https://blog.csdn.net/xufangfang99/article/details/77882792优化代码解决https://segmentfault.com/q..."}
+{"title": "Vue2.x Cli3.xHttp", "content": "安装vue-resource依赖npm install vue-resource --save-dev\nmain.jsimport VueResource from 'vue-resource'..."}
+{"title": "Vue2.x Cli3.x路由", "content": "安装路由模块代码npm install vue-router --save-dev\nrouter.jsimport Vue from 'vue'\nimport Router from 'vue-..."}
+{"title": "Vue2.x Cli3.x组件传值关系梳理", "content": "https://www.cnblogs.com/yflbk-2016/p/10857409.html"}
+{"title": "Vue2.x Cli3.x生命周期", "content": "//生命周期\n\n        beforeCreate:function(){\n          alert(\"组件实例化之前执行的函数\");\n        },\n  ..."}
+{"title": "设计站", "content": "https://color.uisdc.com/"}
+{"title": "电影", "content": "未来岁月《（years and years）》"}
+{"title": "Vue Cli3.xCSS作用域", "content": "scoped关键字如果单个组件中的标签样式不想被App.vue中的样式同化，就是在script标签使用scoped关键字"}
+{"title": "Vue Cli3.x 组建嵌套", "content": "main.js//全局组件放到main.js文件中\n//导入组件到全局\nimport HelloWorld from './components/HelloWorld.vue'\n//全局注册组建..."}
+{"title": "Vue Cli3.x 配置跨域请求", "content": "vue.config.jsmodule.exports = {\n    baseUrl:'/', //根路径\n    //outputDir:'dist'    //构建输出目录\n    ass..."}
+{"title": "Vue Cli3.x 配置基础的路径", "content": "vue.config.jsmodule.exports = {\n    baseUrl:'/', //根路径\n    //outputDir:'dist'    //构建输出目录\n    ass..."}
+{"title": "Vue2.x_2.1初识组件的应用", "content": "app.js//调用VUE的组件用vue的component方法\n//第一个参数是名字。第二个参数是一个对象\nVue.component(\"greeting\",{\n    /..."}
+{"title": "Vue2.x_2.0实例化多个vue对象", "content": "app.jsvar one = new Vue({\n    el:\"#vue-app-one\",\n    data:{\n        title:\"Title o..."}
+{"title": "Vue2.x_1.9小游戏实战", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n    data:{\n        health:100,\n        ended:false,\n..."}
+{"title": "Vue2.x_1.8指令v-for和template列表属性标签", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n    data:{\n        nums:[\"1\",\"2\"..."}
+{"title": "Vue2.x_1.7 指令v-if、v-show", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n    data:{\n        show:false,\n        see:false,\n  ..."}
+{"title": "ps作业", "content": ""}
+{"title": "Vue2.x_1.6动态绑定css属性", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n    data:{\n        changeColor:true,\n        changeL..."}
+{"title": "Vue2.x_1.5computed计算属性", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n    data:{\n        a:10,\n        b:20,\n        age:1..."}
+{"title": "Vue2.x_1.4数据绑定", "content": "ref和v-model实现数据绑定app.jsnew Vue({\n    el:\"#vue-app\",\n\n    data:{\n        name:\"&quo..."}
+{"title": "Vue2.x_1.3键盘事件", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n\n    data:{\n\n    },\n\n    methods:{\n        logName: ..."}
+{"title": "Vue2.x_1.2事件修饰符：once、prevent、stop", "content": "app.jsnew Vue({\n    el:\"#vue-app\",\n\n\n\n    data: {\n        age: 25,\n        x: 0,\n      ..."}
+{"title": "Vue2.x_1.1实例化对象和属性绑定", "content": "实例化Vue对象app.js//  实例化vue对象\nnew Vue({\n    el:\"#vue-app\",\n\n    data:{\n        name:\"..."}
+{"title": "Vue2.x_1.0获取课程代码", "content": "进入github课程代码地址 https://github.com/hemiahwu/vue-basic/tree/lesson-1cmd切换到下载目录 d: cd D:MyFileHtmlvu..."}
+{"title": "介绍思维导图", "content": "https://mubu.com/edit/kpMNlLIVm-"}
+{"title": "网址收藏", "content": "https://www.pixiv.hakula.xyz/member_illust.php?mode=manga&illust_id=55101739"}
+{"title": "Flash作业", "content": "放大镜.zip遮罩.zip"}
+{"title": "中国龙", "content": "https://www.element3ds.com/thread-199905-1-1.html"}
+{"title": "HTML(1-1)", "content": "清除浮动：overflow:hiddenposition定位position的四个属性：static 静态，默认属性，不能设置四周边距relative 相对布局，能设置四周边距，占用文档流abs..."}
+{"title": "SEO（1-9）网站降权与恢复", "content": "判断网站是否被惩罚知识点一：  降权≠被K网站被降权的表现site域名不在首页关键词出现大面积下降同时流量出现下降网站收录停滞，或大范围下降搜索品牌名无排名百度快照被删除搜索引擎终极惩罚之网站被..."}
+{"title": "SEO（1-8）网站基础优化", "content": "网站基础优化推荐使用HTML5语言网站分辨率适应，不要有横向滚动条不要使用Flash不要做任何弹窗和漂浮广告点击（链接）区域的间距要明显页面的大小要控制在50kb左右网页加载速度小于3S域名选择..."}
+{"title": "SEO（1-7）友情链接交换机巧", "content": "交换友情链接的作用增加网站外链提高关键词排名提高网站流量提升网站知名度交换友情链接参考元素参与排名的关键词数量建站时间索引量外链质量与数量交换友情链接的平台QQ群站长论坛友情链接交换平台友情链接..."}
+{"title": "壁纸分享", "content": ""}
+{"title": "SEO（1-6）网站日志分析", "content": "日志分析软件分析手工分析判断真假蜘蛛（真蜘蛛有baiduspider此返回值）tracert命令nslookup命令作业分析自己的网站并总结分析报告"}
+{"title": "SEO（1-5）内容的创建与优化", "content": "不是行业专家，写不出太多专业文章，怎么办？仿写提高文章收录的五大要点时效性段落清晰语义通顺图文并茂原创内容更新数量   越多越好更新频率  每天更新内容，不要长时间没有新内容，频率和数量要稳定增..."}
+{"title": "SEO（1-4）网站外链建设技巧", "content": "什么是网站外链？定义外链就是指从别的网站导入到自己的网站的链接外链的类型有哪几种？纯文本外链（没有投票权）锚文本链接图片外链网站外链的作用投票、推荐引流，通过外链的建设，可以让更多的访客访问你的..."}
+{"title": "SEO（1-3）网站内链优化", "content": "建设内链的作用内链建设原则保证每个页面至少有一个文本链接指向网站导航1.顶部导航\n2.底部导航\n3.面包屑导航\n4.板块文章链接\n5.文章页面链接网站内链建设技巧内链URL唯一性锚文字对应URl..."}
+{"title": "SEO（1-2）网站结构优化", "content": "网站常见的两种结构树形结构扁平结构使用二级域名和二级目录的选择权重比较主域名权重最高二级域名其次二级目录次之URL优化URL分类动态URL静态URL（伪静态）URL"}
+{"title": "SEO（1-2）最新TDK的优化技巧", "content": "什么是TDK ？T = Title（标题）  D = Description（描述）  K = Keywords（关键词）  整个站内当中最重要的优化百度分词算法基于用户的输入（空格——关键词中..."}
+{"title": "SEO（1-1）关键词的挖掘与部署", "content": "定位网站网站提供哪些内容？（网站主题是什么？）网站主要吸引那些人来访问？网站如何盈利？关键词定义关键词是搜索引擎搜索索引结果的主要来源。关键词挖掘手动挖掘关键词使用下拉框相关搜索挖掘分析前三页网..."}
+{"title": "附件ain", "content": "Desktop.zip"}
+{"title": "数据平台", "content": "快易数据"}
+{"title": "Java继承——隐藏", "content": ""}
+{"title": "Java继承——子类可以使用父类中那些成员", "content": ""}
+{"title": "Java面向对象——访问权限", "content": "protected关键字只能在同一个包内访问，同包不同类也可以访问，不同包不可以访问，支持子类访问默认访问权限同一个包不同类类可以访问，不同包不可以访问，，不支持子类访问private关键字只支..."}
+{"title": "VideoScribe破解版资源", "content": "https://www.cr173.com/soft/800038.html"}
+{"title": "Python（8-1）异常处理", "content": "异常类型总结：https://fishc.com.cn/forum.php?mod=viewthread&tid=45814&extra=page%3D1%26filter%3Dtypeid%2..."}
+{"title": "趣味百科知识竞赛排行榜", "content": "趣味百科知识竞赛排行榜.xlsx"}
+{"title": " Python（7-4）文件系统——pickle模块", "content": "pickle可以把任何数据保存文二进制文件和读取二进制文件>>> import pickle\n>>> pickle_file = open('D:\\\\A\\\\c..."}
+{"title": "Python（7-3）文件系统——OS模块", "content": "通过导入的OS模块，进行一些系统的操作来源：https://fishc.com.cn/forum.php?mod=viewthread&tid=45512&extra=page%3D1%26fi..."}
+{"title": "一些有意思的代码注释", "content": "/***                                                                          \n *          .,:,,,..."}
+{"title": "Python（7-2）字符串操作——split（）方法", "content": "分割字符方法str = \"this is string example....wow!!!\"\nprint (str.split( ))\nprint (str.split('i..."}
+{"title": "Python（7-1）文件管理——基本操作", "content": "打开文件和关闭文件>>> f = open('d:\\\\test.txt')\n>>> type(f)\n<class '_io.TextIOWrapper'..."}
+{"title": "Python（6-3）当索引不好用时——集合", "content": "集合（set）是一个无序的不重复元素序列。可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。&g..."}
+{"title": "Python（6-2）当索引不好用时——高级操作", "content": "Python 字典(Dictionary) fromkeys()方法描述Python 字典 fromkeys() 函数用于创建一个新字典，以序列 seq 中元素做字典的键，value 为字典所有..."}
+{"title": "计算机二级——Office快捷键", "content": "Ctrl + L 左对齐Ctrl + R 右对齐Ctrl + E 居中对齐Ctrl + D 字体设置Ctrl + Z 撤销Ctrl + Y 返回撤销F4 重复上一步操作Ctrl + Shift ..."}
+{"title": "Python（6-1）当索引不好用时——基本操作", "content": "区别：数组和元祖都是序列，字典时映射关系传统版本建立映射关系：brand = ['孙悟空', '孙尚香', '孙膑']\nslogn = ['有妖气', '大小姐驾到' ,'失去双腿，得到穿越时空..."}
+{"title": "降维攻击与世界下坠——当《三体》法则照进互联网的现实", "content": "一股悲观情绪在互联网业蔓延，一群自称为“心理阴暗”的从业者，纠结于那些没有底线的竞争、大公司的抄袭、小公司不再创新、最终生态的破坏。这些都与当下大热的科幻小说<三体>不谋而合。这本书..."}
+{"title": "博弈论之畏缩无罪", "content": "什么是人质困境？在生活中，两个人相互背叛叫囚徒困境，而一群人容忍不合理的现象叫人质困境。我们会经常看到这样的新闻，妇女在街上被歹徒抢劫，其他人只会看着并不会上其阻拦；老奶奶摔倒在马路上半天也没有..."}
+{"title": "Python（4-1）数组的基本操作", "content": "添加元素获取数组元素个数len(数组名)添加一个元素在末尾数组名.append(\"元素名称\")添加多个元素在末尾数组名.extend(列表)添加一个元素在任意位置数组名.insert(元素位置，..."}
+{"title": "PYthon——三元操作符", "content": ""}
+{"title": "博弈论之背叛有理", "content": "看到标题是不是觉得今天的话题很荒谬，按照以往的尝试，背叛就是就是小人行为的体现，是内心不够坚定，是欲望蒙蔽了自己的初心，但事实并非我们想的那样简单。"}
+{"title": "博弈论之人生如棋", "content": "小时候很喜欢看爷爷下棋，发现爷爷总是逢三必输，爷爷经常跟我说要每三把就要至少输一把，小时候不知道什么意思，长大才逐渐明白。每个人都想赢棋，但事实是如果一个人经常赢棋，久而久之，便不会有人愿意和他..."}
+{"title": "如何安装&破解IntelliJ IDEA？", "content": "1、首先在官网安装IntelliJ IDEA全家桶最新教程https://my.oschina.net/u/2902720/blog/3161997pycharm汉化问题https://www...."}
+{"title": "小爱便签隐私声明", "content": "我们非常重视您的隐私，专门制定了隐私保护制度以保护您的隐私， 在您使用人人网提供的服务前，请您仔细阅读以下声明。小爱便签的设置密码在本地，不上传到云端，因此我们绝不收集，不采集用户信息，包括用户..."}
+{"title": "小爱便签下载", "content": "com.xiaonote.apk"}
+{"title": "Wdcp如何安装php版本", "content": "脚本下载地址wget http://down.wdlinux.cn/in/phps.sh共支持7个版本的PHP，如5.2.17/5.3.29/5.4.45/5.5.38/5.6.30/7.0.1..."}
+{"title": "建站教程（5-3）建站流程——建站演示", "content": "准备条件虚拟主机Typecho源码具体流程一、打开 畅行云 官网，百度搜索即可二、注册会员三、实名认证四、通过手机号实名认证五、审核通过六、领取免费主机七、使用8uFTp连接8uftp_V3.8..."}
+{"title": " 建站教程（5-2）建站流程——什么是源码？", "content": "定义建站用的源码即网站源码程序常见源码程序免费开源WordPress 博客Typecho    博客Discuz     论坛Ecshop     商城织梦CMS    小型企业或者个人门户网站..."}
+{"title": "建站教程（5-1）建站流程——什么是FTP工具？", "content": "定义FTP客户机可以给服务器发出命令来下载文件，上传文件，创建或改变服务器上的目录。FTP工具推荐8uFTP 8uftp_V3.8.2.0.zip"}
+{"title": "建站教程（4-3）备案——如何备案？", "content": "备案流程稍微麻烦点，时间大概是半个月以内，下面的链接是备案具体的流程https://www.bilibili.com/video/av6639099?from=search&seid=74347..."}
+{"title": "建站教程（4-2）备案——备案和不备案的区别？", "content": "一、备案的条件1、如果你的网站使用的主机是内地的，那么就必须做ICP备案。2、如果你的网站使用的主机是国外的或者香港的，那么备案不备案都是允许的。二、备案和不备案的差别1、当网站备案以后，会获得..."}
+{"title": "建站教程（4-1）备案——什么是备案？", "content": "网站备案是为了规范互联网信息服务活动，促进互联网信息服务健康有序发展，根据国务院令第292号《互联网信息服务管理办法》和工信部令第33号《非经营性互联网信息服务备案管理办法》规定，国家对经营性互..."}
+{"title": "建站教程（3-1）域名——什么是域名？", "content": "起源和定义它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP地址数串。例如，www.wikipedia.org是一个域名，和I..."}
+{"title": "建站教程（2-2）主机——如何挑选主机？", "content": "根据自己的目的和用途挑选学习临时使用学习使用可以挑选便宜的，能用就行。推荐两个平台小鸟云 https://www.niaoyun.com/畅行云 https://www.changxingyun..."}
+{"title": "建站教程（2-1）主机——什么是虚拟主机？", "content": "定义虚拟主机，也叫“网站空间”，就是把一台运行在互联网上的物理服务器划分成多个“虚拟”服务器。虚拟主机技术极大的促进了网络技术的应用和普及。同时虚拟主机的租用服务也成了网络时代的一种新型经济形式..."}
+{"title": " 建站教程（1-3）前言——如何做博客网站？", "content": "建站准备1.虚拟主机2.Mysql数据库（一般主机厂商会附赠）3.域名4.博客程序源代码（最后会教大家如何挑选适合自己的主机）"}
+{"title": "建站教程（1-2）前言——什么是博客？", "content": "何为博客？定义与解释“博客”当然是个大家都陌生的名词，因为这个中文名字还是博客中国的王俊秀灵机一动的产物。博客的英文名词就是“Blog或Weblog”（指人时对应于Blogger）该词来源于“W..."}
+{"title": "建站教程（1-1）前言——为什么要做独立的博客网站？", "content": "1、 独立博客更自由、更独立：有句话叫做“我的地盘听我的”，个人独立博客可以按照自己的想法任意设计、任意管理，安装一套博客程序即可使用，也不用再担心自己发布的文章随时面临被删甚至被关闭的危险，以..."}
+{"title": "Python（6-1）字典和集合——当索引不好用时", "content": "代码#传统方式映射\nbrand = ['宫本','孙悟空','妲己']\nslogn = ['天下无双','有妖气','几把是什么玩意儿']\nprint('宫本的口号是：',slogn[brand..."}
+{"title": "Python（5-22）函数——递归是神马", "content": "设置递归深度import sys\nsys.setrecursionlimit(10000)  #设置深度为10000层，即可递归10000次\n代码#写一个阶乘\ndef factory(n):\ni..."}
+{"title": "Python（5-21）函数——lambda表达式", "content": "lambda表达式代码y = lambda x:x * 2 + 2  #一个参数\n>>> y(20)\n42\n>>> z = lambda x,y:x + y ..."}
+{"title": "欢迎使用 Typecho", "content": "如果您看到这篇文章,表示您的 blog 已经安装成功.https://wenku.baidu.com/view/73a580d73c1ec5da51e27034.html"}
