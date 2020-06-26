@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from demo01.items import Demo01Item
 
 
 class MyblogSpider(scrapy.Spider):
@@ -23,9 +24,11 @@ class MyblogSpider(scrapy.Spider):
             print(summary)
 
             # 存储数据
-            article = {"title":h2,"content":summary}
-            yield article
+            # article = {"title":h2,"content":summary}
+            # yield article
 
+            item = Demo01Item(title=h2,content=summary)
+            yield item
             pass
 
 

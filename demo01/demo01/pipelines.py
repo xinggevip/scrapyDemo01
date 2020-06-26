@@ -18,7 +18,7 @@ class Demo01Pipeline:
 
     def process_item(self, item, spider):
         print("存储")
-        item_json = json.dumps(item,ensure_ascii=False)
+        item_json = json.dumps(dict(item),ensure_ascii=False)
         self.file.write(item_json + '\n')
         return item
 
