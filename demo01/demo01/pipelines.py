@@ -5,9 +5,8 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
-from scrapy.exporters import JsonItemExporter
-import json
 
+import json
 # class Demo01Pipeline:
 #     def __init__(self):
 #         self.file = open('article.json', 'w',encoding='utf-8')
@@ -27,13 +26,36 @@ import json
 #         self.file.close()
 #         pass
 
+from scrapy.exporters import JsonItemExporter
+# class Demo01Pipeline:
+#     def __init__(self):
+#         self.file = open('article.json', 'wb')
+#         self.expport = JsonItemExporter(self.file,ensure_ascii=False,encoding='utf-8')
+#         self.expport.start_exporting()
+#
+#     def open_spider(self,spider):
+#         print("爬虫开始...")
+#         pass
+#
+#     def process_item(self, item, spider):
+#         print("存储")
+#         self.expport.export_item(item)
+#         return item
+#
+#     def close_spider(self,spider):
+#         print("爬虫结束")
+#         self.expport.finish_exporting()
+#         self.file.close()
+#         pass
+
+
+from scrapy.exporters import JsonLinesItemExporter
 class Demo01Pipeline:
     def __init__(self):
         self.file = open('article.json', 'wb')
-        self.expport = JsonItemExporter(self.file,ensure_ascii=False,encoding='utf-8')
-        self.expport.start_exporting()
+        self.expport = JsonLinesItemExporter(self.file, ensure_ascii=False, encoding='utf-8')
 
-    def open_spider(self,spider):
+    def open_spider(self, spider):
         print("爬虫开始...")
         pass
 
@@ -42,8 +64,7 @@ class Demo01Pipeline:
         self.expport.export_item(item)
         return item
 
-    def close_spider(self,spider):
+    def close_spider(self, spider):
         print("爬虫结束")
-        self.expport.finish_exporting()
         self.file.close()
         pass
