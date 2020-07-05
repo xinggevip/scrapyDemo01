@@ -23,7 +23,7 @@ class Bmw5Spider(scrapy.Spider):
             print('*' * 50)
             '''
             urls = list(map(lambda url:response.urljoin(url),urls))
-            item = QczjItem(category = category,urls = urls)
+            item = QczjItem(category = category,image_urls = urls)
             # print(urls)
             # print('*' * 50)
             yield item
