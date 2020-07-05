@@ -42,9 +42,16 @@ class QczjBmwImagesPipelines(ImagesPipeline):
             os.mkdir(category_path)
             pass
 
+        info = request.item.get('info')
+        info_path = os.path.join(category_path, info)
+        if not os.path.exists(info_path):
+            os.mkdir(info_path)
+            pass
+
+
         image_name = path.replace('full/', '')  # 68529e411d7e144877e49fa5a28e769986ddf027.jpg 哈希文件名
         # image_name = request.item.get('category') + path.replace('full/','') # 重要特点68529e411d7e144877e49fa5a28e769986ddf027.jpg 分类名称哈希文件名
-        image_path = os.path.join(category_path,image_name) # 项目路径/images/车身外观/文件名.jpg
+        image_path = os.path.join(info_path,image_name) # 项目路径/images/车身外观/文件名.jpg
         return image_path
         pass
 

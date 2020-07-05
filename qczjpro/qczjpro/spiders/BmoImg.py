@@ -10,8 +10,8 @@ class BmoimgSpider(CrawlSpider):
     start_urls = ['https://car.autohome.com.cn/pic/series/65.html']
 
     rules = (
-        Rule(LinkExtractor(allow=r'https://car.autohome.com.cn/pic/series/65-\d+\.html'), follow=True),
-        Rule(LinkExtractor(allow=r'https://car.autohome.com.cn/photo/series/.*'), callback='parse_item', follow=False),
+        Rule(LinkExtractor(allow=r'https://car\.autohome\.com\.cn/pic/series/65-.*?\.html'), follow=True),
+        Rule(LinkExtractor(allow=r'https://car\.autohome\.com\.cn/photo/series/.*'), callback='parse_item', follow=False),
     )
 
     def parse_item(self, response):
@@ -20,7 +20,8 @@ class BmoimgSpider(CrawlSpider):
         #item['description'] = response.xpath('//div[@id="description"]').get()
 
         category = response.xpath('//div[@id="outlink"]/a[1]//text()').get()
+        info = response.xpath('//div[@class="type-show"]/ul/li/a[@class="red"]//text()').get()
         image_urls = [response.urljoin(response.xpath('//img[@id="img"]/@src').get())]
-        item = QczjproItem(category = category,image_urls = image_urls)
+        item = QczjproItem(category = category,info = info, image_urls = image_urls)
 
         yield item

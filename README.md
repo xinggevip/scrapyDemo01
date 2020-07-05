@@ -57,7 +57,7 @@
 
 6. `item`：建议在`items.py`中定义好模型，以后就不用使用字典的方式。
 
-7. `pipeline:这个是专门用来保存数据的，其中有三个方法会经常使用：
+7. `pipeline`:这个是专门用来保存数据的，其中有三个方法会经常使用：
 
    - `open_spider(self, spider)`：当爬虫被打开的时候执行
    - `process_item(self, item, spider)`:当爬虫有`item`传过来的时候会被调用。
