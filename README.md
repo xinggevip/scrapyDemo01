@@ -137,5 +137,31 @@
 
 详细教程 https://www.cnblogs.com/xpwi/p/9601058.html
 
+## Downloader Middlewares
 
+下载中间件是引擎和下载器之间通信的中间件。在这个中间件中我们可以设置代理、更换请求头来达到反反爬虫的目的。要写下载器中间件，可以在下载器中实现的两个方法。一个是`process_request(self,request,spider)`，这个方法是在请求之前执行，还有一个是`process_response(self,rquest,response,spider)`，这个方法是数据下载到引擎之前执行。
 
+### process_request(self,request,spider)
+
+这个方法是器发送请求之前执行。一般可以在这里设置随机代理ip等。
+
+1. 参数
+   - request：发送请求的request对象
+   - spider：发送请求的spider对象
+2. 返回值
+   - 返回None：如果返回None，Scrapy将继续处理该request，执行其他中间件的相应方法，直到合适的下载处理函数被调用。
+   - 返回Response对象：Scrapy将不会调用任何其他的process_request方法，将直接返回这个response对象。已经激活的中间件process_response方法则会在每个response返回时被调用。
+   - 返回Request对象：不在使用之前的request对象去瞎子啊数据，而是genuine现在返回的request对象返回数据。
+   - 如果这个方法抛出了异常，则会调用process_exception方法。
+
+### process_response(self,rquest,response,spider)
+
+这个下载器再在的数据到引擎中间会执行的方法。
+
+### 执行流程
+
+![scrapy下载中间件执行流程](https://raw.githubusercontent.com/xinggevip/mypic/master/img/scrapy%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+
+### 查看浏览器的请求头
+
+浏览器访问 http://httpbin.org/user-agent
