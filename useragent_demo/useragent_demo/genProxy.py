@@ -3,7 +3,7 @@
 # @Time : 2020/7/7 8:19 
 # @Author : gaoxing 
 # @Version：V 0.1
-# @File : demo.py
+# @File : genProxy.py
 
 
 import time
