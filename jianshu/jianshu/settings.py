@@ -66,7 +66,8 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'jianshu.pipelines.JianshuPipeline': 300,
+   # 'jianshu.pipelines.JianshuPipeline': 300,
+   'jianshu.pipelines.JianshuTwistedPipline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
