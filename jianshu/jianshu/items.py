@@ -16,4 +16,6 @@ class ArticleItem(scrapy.Item):
     author = scrapy.Field()
     pub_time = scrapy.Field()
     article_id = scrapy.Field()
+    origin_url = scrapy.Field()
+    content = scrapy.Field()
     pass
