@@ -34,13 +34,49 @@ class JsSpider(CrawlSpider):
         urlArr = url.split('?')
         urlRes = urlArr[0]
         article_id = urlRes.split('/')[-1]
-        content =  ''.join(response.xpath('//article[@class="_2rhmJa"]//text()').getall())
+        content = ''.join(response.xpath('//article[@class="_2rhmJa"]//text()').getall())
 
 
         now = int(round(time.time() * 1000))
         pub_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(now / 1000))
 
-        item = ArticleItem(title = title,avatar = avatar, author = author, pub_time = pub_time, article_id = article_id, origin_url = url, content = content)
-        yield item
+        try:
+            like_count = int(response.xpath('//span[@class="_1GPnWJ"]/text()').get())
+            commit_count = int(response.xpath('//div[@class="_3nj4GN"]//span[1]/text()[2]').get())
+            word_count = int(response.xpath('//div[@class="s-dsoj"]//span[2]/text()').get().replace(' ','').replace(',','').replace('字数',''))
+            subjects = ','.join(response.xpath('//span[@class="_2-Djqu"]//text()').getall())
+            read_count = int(response.xpath('//div[@class="s-dsoj"]//span[3]/text()').get().replace(' ','').replace(',','').replace('阅读','')
+)
 
+            item = ArticleItem(
+                title = title,
+                avatar = avatar,
+                author = author,
+                pub_time = pub_time,
+                article_id = article_id,
+                origin_url = url,
+                content = content,
+                like_count = like_count,
+                commit_count = commit_count,
+                word_count = word_count,
+                subjects = subjects,
+                read_count = read_count
+
+            )
+            yield item
+        except:
+            print('捕获到异常' + '*' * 30)
+
+            item = ArticleItem(
+                title=title,
+                avatar=avatar,
+                author=author,
+                pub_time=pub_time,
+                article_id=article_id,
+                origin_url=url,
+                content=content
+            )
+            yield item
+
+            pass
         pass

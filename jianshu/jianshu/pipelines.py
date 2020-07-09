@@ -14,7 +14,7 @@ class JianshuPipeline:
             'host': '127.0.0.1',
             'port': 3306,
             'user': 'root',
-            'password': '',
+            'password': 'jinkoubei17+',
             'database': 'jianshu',
             'charset': 'utf8'
         }
@@ -25,14 +25,26 @@ class JianshuPipeline:
 
     def process_item(self, item, spider):
         # print(item)
-        self.cursor.execute(self.sql, (item['title'],item['content'],item['author'],item['avatar'],item['pub_time'],item['origin_url'],item['article_id']))
+        self.cursor.execute(self.sql, (
+            item['title'],
+            item['content'],
+            item['author'],
+            item['avatar'],
+            item['pub_time'],
+            item['origin_url'],
+            item['article_id'],
+            item['like_count'],
+            item['commit_count'],
+            item['word_count'],
+            item['subjects'],
+            item['read_count'],))
         self.conn.commit()
         return item
 
     @property
     def sql(self):
         if not self._sql:
-            self._sql = 'insert into article(id,title,content,author,avatar,pub_time,origin_url,article_id) values (null,%s,%s,%s,%s,%s,%s,%s)'
+            self._sql = 'insert into article(id,title,content,author,avatar,pub_time,origin_url,article_id,like_count,commit_count,word_count,subjects,read_count) values (null,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
             return self._sql
         return self._sql
 
@@ -43,7 +55,7 @@ class JianshuTwistedPipline(object):
             'host': '127.0.0.1',
             'port': 3306,
             'user': 'root',
-            'password': '',
+            'password': 'jinkoubei17+',
             'database': 'jianshu',
             'charset': 'utf8',
             'cursorclass': cursors.DictCursor
@@ -60,8 +72,20 @@ class JianshuTwistedPipline(object):
 
     def insert_item(self, cursor, item):
         cursor.execute(self.sql, (
-        item['title'], item['content'], item['author'], item['avatar'], item['pub_time'], item['origin_url'],
-        item['article_id']))
+        item['title'],
+        item['content'],
+        item['author'],
+        item['avatar'],
+        item['pub_time'],
+        item['origin_url'],
+        item['article_id'],
+        item['like_count'],
+        item['commit_count'],
+        item['word_count'],
+        item['subjects'],
+        item['read_count']
+
+        ))
         pass
 
     def handle_error(self, error, item, spider):
@@ -74,7 +98,7 @@ class JianshuTwistedPipline(object):
     @property
     def sql(self):
         if not self._sql:
-            self._sql = 'insert into article(id,title,content,author,avatar,pub_time,origin_url,article_id) values (null,%s,%s,%s,%s,%s,%s,%s)'
+            self._sql = 'insert into article(id,title,content,author,avatar,pub_time,origin_url,article_id,like_count,commit_count,word_count,subjects,read_count) values (null,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
             return self._sql
         return self._sql
 

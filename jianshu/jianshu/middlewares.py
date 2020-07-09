@@ -6,7 +6,9 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+from selenium import webdriver
+import time
+from scrapy.http.response.html import  HtmlResponse
 
 class JianshuSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -101,3 +103,29 @@ class JianshuDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class SeleniumDownMiddleware(object):
+    def __init__(self):
+        # webdriver配置教程 https://www.cnblogs.com/lfri/p/10542797.html
+        # 没有配环境变量的时候可以这样使用
+        # self.driver = webdriver.Chrome(executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+
+        # 配了环境变量可以这样使用
+        self.driver = webdriver.Chrome()
+
+    def process_request(self, request, spider):
+        self.driver.get(request.url)
+        time.sleep(1.5)
+        try:
+            while True:
+                showMore = self.driver.find_element_by_class_name('H7E3vT')
+                showMore.click()
+                time.sleep(0.3)
+                if not showMore:
+                    break
+        except:
+            pass
+        source = self.driver.page_source
+        response = HtmlResponse(url=self.driver.current_url, body=source, request=request,encoding='utf-8')
+        return response
