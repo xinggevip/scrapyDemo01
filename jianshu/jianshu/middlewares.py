@@ -109,10 +109,10 @@ class SeleniumDownMiddleware(object):
     def __init__(self):
         # webdriver配置教程 https://www.cnblogs.com/lfri/p/10542797.html
         # 没有配环境变量的时候可以这样使用
-        # self.driver = webdriver.Chrome(executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+        self.driver = webdriver.Chrome(executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
 
         # 配了环境变量可以这样使用
-        self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome()
 
     def process_request(self, request, spider):
         self.driver.get(request.url)
